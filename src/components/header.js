@@ -1,4 +1,5 @@
 import * as React from "react";
+import {imgHeader} from "../images/header.png"
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
         </h2>
         <img
           id="header-img"
-          src="/static/header.jpg"
+          src={imgHeader}
           className="w-full max-h-fit "
         ></img>
       </header>
