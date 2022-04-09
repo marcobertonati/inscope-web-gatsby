@@ -1,0 +1,48 @@
+/*How integrate SASS to the project: https://dev.to/jakedohm_34/using-tailwind-in-sass-with-gatsby-js-n9a*/
+
+@tailwind base;
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+
+/* CSS to guide*/
+// html > body > #___gatsby > #gatsby-focus-wrapper > main > *, #services-list, #services-description, #header-id > header , #header-id > div {
+//     border: 1px solid black;
+//     // padding: 1rem;
+// }
+
+main {
+    display: grid;
+    height:100vh;
+}
+
+main {    
+
+
+    article , footer {
+        background-color: white;
+    }
+    
+
+    #services-list {
+        cursor: pointer;
+    }
+
+    #services-list > *:hover{
+        background-color: #fecb00;
+    }
+}
+
+#header-id{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    #header-h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
