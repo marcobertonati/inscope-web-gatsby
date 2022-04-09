@@ -1,5 +1,5 @@
 import * as React from "react";
-import {imgNav} from "../images/inscope-logo.png"
+import ImgNav from "../images/inscope-logo.png"
 
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="#h1" class="flex items-center">
             <img
-              src={imgNav}
+              src={ImgNav}
               class="mr-3 h-10 sm:h-16"
               alt="Inscope Logo"
             />
