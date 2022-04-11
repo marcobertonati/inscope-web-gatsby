@@ -8,7 +8,7 @@ import Footer from "../components/footer";
 
 const IndexPage = () => {
   return (
-    <main className="">
+    <main className="xl:mx-40">
       <title>Inscope</title>
       <Navbar />
       <Header />

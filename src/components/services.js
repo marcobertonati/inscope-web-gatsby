@@ -16,37 +16,39 @@ export default function Services() {
   };
 
   return (
-    <article id="services-id" className="container mx-auto flex">
-      <section id="services-list" className="flex flex-col mx-6">
-        {data.map((item) => {
-          return (
-            <button
-              className="bg-white rounded-lg p-2 my-2 drop-shadow"
-              key={item.id}
-              onClick={handleServices}
-              id={item.id}
-              // aria-hidden="true"
-            >
-              {item.title}
-            </button>
-          );
-        })}
-      </section>
+    <article id="services-id" className="container mx-auto">
+      <div className="flex mx-6">
+        <section id="services-list" className="flex flex-col">
+          {data.map((item) => {
+            return (
+              <button
+                className="bg-white rounded-lg p-2 mb-2 drop-shadow"
+                key={item.id}
+                onClick={handleServices}
+                id={item.id}
+                // aria-hidden="true"
+              >
+                {item.title}
+              </button>
+            );
+          })}
+        </section>
 
-      <section id="services-description" className="container drop-shadow">
-        {services.length == 1 ? (
-          <div className="bg-[#fecb00] drop-shadow mr-6 mt-2 p-4 h-full flex justify-center items-center	">
-            <div className="text-white font-bold text-2xl">Click for a services 📌</div>
-          </div>
-        ) : (
-          <div className="bg-white drop-shadow mr-6 mt-2 p-4 h-full	">
-            <div className="text-[#fecb00] font-bold text-4xl">
-              {services?.subTitle}
+        <section id="services-description" className="drop-shadow w-full">
+          {services.length == 1 ? (
+            <p className="bg-[#fecb00] drop-shadow text-white font-bold text-xl ml-4 p-4 h-full">
+                Click for a services 📌
+            </p>
+          ) : (
+            <div className="bg-white drop-shadow ml-4 p-4 h-full">
+              <div className="text-[#fecb00] font-bold text-4xl">
+                {services?.subTitle}
+              </div>
+              <div className="mt-2">{services?.description}</div>
             </div>
-            <div className="mt-2">{services?.description}</div>
-          </div>
-        )}
-      </section>
+          )}
+        </section>
+      </div>
     </article>
   );
 }

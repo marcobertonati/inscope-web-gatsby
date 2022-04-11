@@ -5,7 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* CSS to guide*/
 // html > body > #___gatsby > #gatsby-focus-wrapper > main > *, #services-list, #services-description, #header-id > header , #header-id > div {
 //     border: 1px solid black;
@@ -13,36 +12,46 @@
 // }
 
 main {
-    display: grid;
-    height:100vh;
+  display: grid;
+  height: 100vh;
 }
 
-main {    
+main {
+  article,
+  footer {
+    background-color: white;
+  }
 
+  #services-list {
+    cursor: pointer;
+  }
 
-    article , footer {
-        background-color: white;
-    }
-    
-
-    #services-list {
-        cursor: pointer;
-    }
-
-    #services-list > *:hover{
-        background-color: #fecb00;
-    }
+  #services-list > *:hover {
+    background-color: #fecb00;
+  }
 }
 
-#header-id{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+#header-id {
+  position: relative;
+  display: inline-block;
+  text-align: center;
 
-    #header-h2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  #header-h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*FORM*/
+
+#input-email,
+#textarea-form-message {
+  outline: none;
+  resize: none;
+}
+
+#form-contact {
+  border: 1px solid #fecb00;
 }
