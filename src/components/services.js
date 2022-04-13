@@ -35,7 +35,7 @@ export default function Services() {
         </section>
 
         <section id="services-description" className="drop-shadow w-full">
-          {services.length == 1 ? (
+          {services.length === 1 ? (
             <p className="bg-[#fecb00] drop-shadow text-white font-bold text-xl ml-4 p-4 h-full">
                 Click for a services 📌
             </p>

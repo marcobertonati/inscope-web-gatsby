@@ -10,6 +10,7 @@ export default function Header() {
         </h2>
         <img
           id="header-img"
+          alt="Inscrope logo"
           src={ImgHeader}
           className="w-full max-h-fit "
         ></img>

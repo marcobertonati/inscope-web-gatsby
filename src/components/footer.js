@@ -11,16 +11,16 @@ export default function Footer() {
           <h6 className="w-full text-center text-white font-bold">inScope</h6>
           <div className="flex justify-center w-full">
             <a href="https://www.instagram.com">
-              <img className="max-h-8 m-2" src={IconIg} />
+              <img alt="Instagram account" className="max-h-8 m-2" src={IconIg} />
             </a>
 
             <a href="https://www.facebook.com">
               {" "}
-              <img className="max-h-8 m-2" src={IconFb} />
+              <img alt="Facebook account" className="max-h-8 m-2" src={IconFb} />
             </a>
 
             <a href="https://www.linkedin.com">
-              <img className="max-h-8 m-2" src={IconLn} />
+              <img alt="Linkedin account" className="max-h-8 m-2" src={IconLn} />
             </a>
           </div>
         </div>
